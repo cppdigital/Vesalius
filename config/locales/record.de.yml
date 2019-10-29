@@ -1,0 +1,8 @@
+de:
+  hyrax:
+    icons:
+      record:     'fa fa-file-text-o'
+    select_type:
+      record:
+        description:        "Record Werke"
+        name:               "Record"
