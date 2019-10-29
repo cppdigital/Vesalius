@@ -73,3 +73,7 @@ gem 'riiif', '~> 2.0'
 
 #add hydra role-management gem
 gem 'hydra-role-management'
+
+group :production do
+  gem 'pg'
+end
