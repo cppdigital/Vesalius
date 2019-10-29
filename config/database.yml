@@ -21,5 +21,14 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  #<<: *default
+  #database: db/production.sqlite3
+  host: <%= ENV["HYRAX_DB_HOST"] %>
+  database: <%= ENV["HYRAX_DB"] %>
+  adapter: postgresql
+  encoding: unicode
+  port: 5432
+  username: <%= ENV["HYRAX_DB_USERNAME"] %>
+  password: <%= ENV["HYRAX_DB_PW"] %>
+  timeout: 5000
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
