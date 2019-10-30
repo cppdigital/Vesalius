@@ -76,5 +76,5 @@ gem 'hydra-role-management'
 
 group :production do
   gem 'pg'
-  gem 'sidekiq'
+#  gem 'sidekiq'
 end
