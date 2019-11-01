@@ -39,7 +39,7 @@ WORKDIR /home/vesalius
 #    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
 #    apt-get update && sudo apt-get install yarn
 
-RUN gem install rails -v 5.1.7
+RUN gem install rails -v 5.1.6
 
 RUN git clone https://cppdigital:cppdigital25@github.com/cppdigital/vesalius-hyrax2.6
 
