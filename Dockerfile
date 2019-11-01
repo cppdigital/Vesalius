@@ -41,7 +41,7 @@ WORKDIR /home/vesalius
 
 RUN gem install rails -v 5.1.7
 
-RUN git clone https://cppdigital:cppdigital25@github.com/cppdigital/vesalius
+RUN git clone https://cppdigital:cppdigital25@github.com/cppdigital/vesalius-hyrax2.6
 
 WORKDIR /home/vesalius/vesalius
 
