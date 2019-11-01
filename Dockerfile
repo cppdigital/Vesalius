@@ -48,7 +48,7 @@ WORKDIR /home/vesalius/vesalius
 RUN bundle install --without developement:test
 
 #add dummy value for secret key as per https://github.com/rails/rails/issues/32947
-#RUN SECRET_KEY_BASE=1 RAILS_ENV=production bundle exec rake assets:precompile
+RUN SECRET_KEY_BASE=1 RAILS_ENV=production bundle exec rake assets:precompile
 
 #RUN SECRET_KEY_BASE=1 bundle exec rake db:migrate
 
