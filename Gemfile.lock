@@ -766,6 +766,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 3.0)
+  browse-everything
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)

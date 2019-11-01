@@ -78,3 +78,5 @@ group :production do
   gem 'pg'
 #  gem 'sidekiq'
 end
+
+gem 'browse-everything'
