@@ -19,7 +19,7 @@ RUN apt-get -qq update \
                                               file \
                                               yarn
 
-RUN update-rc.d redis-server enable
+CMD update-rc.d redis-server enable
 
 RUN useradd -ms /bin/bash vesalius
 
