@@ -8,7 +8,6 @@ RUN apt-get -qq update \
                                               unzip \
                                               curl \
                                               git \
-                                              redis-server \
                                               ghostscript \
                                               imagemagick \
                                               libreoffice \
@@ -17,9 +16,10 @@ RUN apt-get -qq update \
                                               libpq5 \
                                               libpq-dev \
                                               file \
-                                              yarn
 
-CMD update-rc.d redis-server enable
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+    apt-get update && sudo apt-get install yarn
 
 RUN useradd -ms /bin/bash vesalius
 
@@ -34,10 +34,6 @@ RUN wget http://projects.iq.harvard.edu/files/fits/files/fits-1.0.5.zip \
     && chmod a+x fits/fits.sh
 
 WORKDIR /home/vesalius
-
-#RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
-#    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
-#    apt-get update && sudo apt-get install yarn
 
 RUN gem install rails -v 5.1.6
 
