@@ -15,7 +15,7 @@ RUN apt-get -qq update \
                                               ffmpeg \
                                               libpq5 \
                                               libpq-dev \
-                                              file \
+                                              file
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
