@@ -50,6 +50,6 @@ RUN SECRET_KEY_BASE=1 RAILS_ENV=production bundle exec rake assets:precompile
 
 EXPOSE 3000
 
-#CMD bin/boot
+CMD sidekiq -q ingest -q default -q event
 
 CMD bundle exec rails s -p 3000 -b '0.0.0.0' -e production
