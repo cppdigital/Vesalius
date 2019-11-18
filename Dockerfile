@@ -27,19 +27,17 @@ USER vesalius
 
 WORKDIR /home/vesalius
 
-RUN wget http://projects.iq.harvard.edu/files/fits/files/fits-1.0.5.zip \
-    && unzip fits-1.0.5.zip \
-    && rm fits-1.0.5.zip \
-    && mv fits-1.0.5 fits \
-    && chmod a+x fits/fits.sh
-
-WORKDIR /home/vesalius
-
 RUN gem install rails -v 5.1.6
 
 RUN git clone https://cppdigital:cppdigital25@github.com/cppdigital/vesalius
 
 WORKDIR /home/vesalius/vesalius
+
+RUN wget http://projects.iq.harvard.edu/files/fits/files/fits-1.0.5.zip \
+    && unzip fits-1.0.5.zip \
+    && rm fits-1.0.5.zip \
+    && mv fits-1.0.5 fits \
+    && chmod a+x fits/fits.sh
 
 RUN bundle install --without developement:test
 
