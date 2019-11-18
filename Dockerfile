@@ -11,6 +11,7 @@ RUN apt-get -qq update \
                                               ghostscript \
                                               imagemagick \
                                               libreoffice \
+                                              default-jdk \
                                               nodejs \
                                               ffmpeg \
                                               libpq5 \
