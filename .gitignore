@@ -23,5 +23,5 @@
 .byebug_history
 
 #ignore local installation of fits
-/fits/*
-/fits.log
+#/fits/*
+#/fits.log
