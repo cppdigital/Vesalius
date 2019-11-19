@@ -13,6 +13,7 @@ RUN apt-get -qq update \
                                               libreoffice \
                                               default-jdk \
                                               nodejs \
+                                              libvpx \
                                               ffmpeg \
                                               libpq5 \
                                               libpq-dev \
