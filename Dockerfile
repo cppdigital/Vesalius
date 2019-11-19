@@ -39,6 +39,7 @@ WORKDIR /home/vesalius/vesalius
 #    && rm fits-1.0.5.zip \
 #    && mv fits-1.0.5 fits \
 #    && chmod a+x fits/fits.sh
+RUN chmod a+x fits/fits.sh
 
 RUN bundle install --without developement:test
 
