@@ -76,7 +76,7 @@ gem 'hydra-role-management'
 
 group :production do
   gem 'pg'
-  gem 'sidekiq'
+  gem 'sidekiq', '5.2.7'
 end
 
 gem 'browse-everything'
