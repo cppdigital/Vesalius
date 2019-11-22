@@ -30,7 +30,7 @@ WORKDIR /home/vesalius
 
 RUN gem install rails -v 5.1.6
 
-RUN git clone https://cppdigital/vesalius
+RUN git clone https://github.com/cppdigital/vesalius
 
 WORKDIR /home/vesalius/vesalius
 
