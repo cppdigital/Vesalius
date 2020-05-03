@@ -1,0 +1,8 @@
+fr:
+  hyrax:
+    icons:
+      oral_history:     'fa fa-file-text-o'
+    select_type:
+      oral_history:
+        description:        "Oral history œuvres"
+        name:               "Oral History"

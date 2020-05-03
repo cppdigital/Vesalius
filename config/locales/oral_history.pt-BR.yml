@@ -1,0 +1,8 @@
+pt-BR:
+  hyrax:
+    icons:
+      oral_history:     'fa fa-file-text-o'
+    select_type:
+      oral_history:
+        description:        "Oral history trabalhos"
+        name:               "Oral History"

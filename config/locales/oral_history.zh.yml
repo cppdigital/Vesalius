@@ -1,0 +1,10 @@
+zh:
+  hyrax:
+    icons:
+      oral_history:     'fa fa-file-text-o'
+    select_type:
+      oral_history:
+        # TODO: translate `human_name` into Chinese
+        description:        "Oral history 作品"
+        name:               "Oral History"
+        # TODO: translate `human_name` into Chinese

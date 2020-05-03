@@ -1,0 +1,10 @@
+es:
+  hyrax:
+    icons:
+      fond:     'fa fa-file-text-o'
+    select_type:
+      fond:
+        # TODO: translate `human_name` into Spanish
+        description:        "Fond trabajos"
+        name:               "Fond"
+        # TODO: translate `human_name` into Spanish

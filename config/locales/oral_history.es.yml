@@ -1,0 +1,10 @@
+es:
+  hyrax:
+    icons:
+      oral_history:     'fa fa-file-text-o'
+    select_type:
+      oral_history:
+        # TODO: translate `human_name` into Spanish
+        description:        "Oral history trabajos"
+        name:               "Oral History"
+        # TODO: translate `human_name` into Spanish

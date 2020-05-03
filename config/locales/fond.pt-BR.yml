@@ -1,0 +1,8 @@
+pt-BR:
+  hyrax:
+    icons:
+      fond:     'fa fa-file-text-o'
+    select_type:
+      fond:
+        description:        "Fond trabalhos"
+        name:               "Fond"
