@@ -1,5 +1,7 @@
 FROM ruby:2.5.5
 
+ARG GIT_BRANCH=master
+
 ENV RAILS_ENV=production
 
 RUN apt-get -qq update \
@@ -30,7 +32,7 @@ WORKDIR /home/vesalius
 
 RUN gem install rails -v 5.1.6
 
-RUN git clone https://github.com/cppdigital/vesalius
+RUN git clone --single-branch --branch $GIT_BRANCH https://github.com/cppdigital/vesalius
 
 WORKDIR /home/vesalius/vesalius
 
