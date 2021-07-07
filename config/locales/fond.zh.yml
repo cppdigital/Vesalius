@@ -1,0 +1,10 @@
+zh:
+  hyrax:
+    icons:
+      fond:     'fa fa-file-text-o'
+    select_type:
+      fond:
+        # TODO: translate `human_name` into Chinese
+        description:        "Fond 作品"
+        name:               "Fond"
+        # TODO: translate `human_name` into Chinese
